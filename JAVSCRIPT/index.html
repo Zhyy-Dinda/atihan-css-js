@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Background Color App</title>
+  <style>
+    body {
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .color-box {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .color-box:hover{
+        background-color: white;
+        color: white;
+        border-radius: 50%;
+        transition: 1.0s;
+        translate: -50px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Change Background Color</h1>
+  <div class="color-box" id="colorBox" onmouseout="">Click Me</div>
+
+  <script src="main.js"></script>
+</body>
+</html>

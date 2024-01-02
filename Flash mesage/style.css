@@ -1,0 +1,50 @@
+body{
+    display: grid;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background: #22212c;
+}
+
+#container{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 700px;
+    height: 250px;
+}
+
+h1{
+    font-size: 0.9em;
+    font-weight: 100;
+    letter-spacing: 3px;
+    padding-top: 5px;
+    color: rgb(117, 119, 119);
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+button, .dot{
+    cursor: pointer;
+}
+
+#success-box{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    left: 12%;
+    background: linear-gradient(to bottom right, #b0bd7d 40%, #99dbb4 100%);
+    border-radius: 20px;
+    perspective: 40px;
+ 
+}
+
+#error-box{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    left: 12%;
+    background: linear-gradient(to bottom right, #f0f0f0 40%, #f0f0f0 100%);
+    border-radius: 20px;
+}

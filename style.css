@@ -1,0 +1,29 @@
+.animate-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+}
+  
+  .animate-button:hover {
+    transform: scale(1.1);
+  }
+   
+
+  body {
+    background-color: #F0F0F0; /* Mengatur warna latar belakang */
+  }
+  
+  .container {
+    background-image: url("gambar.jpg"); /* Mengatur gambar latar belakang */
+    background-size: cover; /* Mengatur ukuran gambar agar sesuai dengan elemen */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar latar belakang */
+  }
+  
+  

@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #04071f;
+    color: aliceblue;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(3, 247, 255);
+    border-bottom: #00ccff;
+}
+
+.home{
+    height: 100vh;
+    margin-bottom: 30px;
+    background: url('./image/peakpx\ \(1\).jpg');
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing:-3px;
+    color: aqua;
+    animation: typing 0.1s steps(40,end),
+    blink-caret 0.78s step-end infinite;
+    -webkit-animation: typing 0.1s steps(40,end),;
+}
+
+.home-content h3:hover,
+.home-content h3:active {
+    fallback: inherit;
+    letter-spacing: 12px;
+    transition: 1s;
+    transform-style: preserve-3d;
+    to{
+        translate: transformX(0);
+    }
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-around;
+    width: 345px;
+    height: 50px;
+    text-align: center;
+    background: transparent;
+    box-shadow: turquoise;
+}
+.home-content .btn-box a{
+    /* width: 345px; */
+    /* height: 50px; */
+    text-align: center;
+    background: transparent;
+    box-shadow: turquoise;
+}
+.home-content .btn-box a:hover{
+    /*width: 100px;
+    */height: 50px;
+    background: aqua;
+    color: rgb(50, 14, 53);
+    text-align: center;
+    overflow-y: auto;
+    outline: #081b29;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 9.s ease-in-out;
+    transition: 0.5s;
+    animation: transformX 0. s ease;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.btn-box a{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    border-bottom: 1px solid aqua;
+    border-radius: 19px;
+    font-size: 20px;
+    color: #c9e9ff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.btn-box a:nth-child(2){
+    background: none;
+}
+
+.home-sci{
+    position: absolute;
+    align-items: center;
+    padding: 30px;
+    bottom: 40px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+}
+
+.home-sci a :hover{
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card{
+    position: relative;
+    border-radius: 12px;
+}
+
+.container .card .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00ccff;
+    transition: 0.8s;
+    z-index: 1;
+}
+
+.container .card:nth-child(1) .icon{
+    background: linear-gradient(135deg, #405de6 , #405de6, #833ab4, #c13584, #e1306c, #fd1d1d);
+    border-radius: 7px;
+}
+.container .card:nth-child(2) .icon{
+    background: #6eadd4;
+    border-radius: 7px;
+}
+
+.container .card:nth-child(3) .icon{
+    background: #131418;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.container .card .icon .fa-brands{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    color: #fff;
+}
+
+.container .card .font{
+    width: 250px;
+    height: 150px;
+    transition: 0.5s;
+    border-radius: 7px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}

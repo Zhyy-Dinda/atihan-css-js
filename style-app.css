@@ -1,0 +1,14 @@
+h1{
+    color: black;
+}
+
+input [type="text"]{
+    width: 200px;
+
+}
+
+button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+}
